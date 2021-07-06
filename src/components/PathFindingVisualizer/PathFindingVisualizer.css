@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+.start{
+    background-image: url('../../svgIcons/right-arrow.png');
+    padding:3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+.target{
+    background-image: url('https://i.stack.imgur.com/oqzBr.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.unvisited{
+    border: 1px solid #51aeb89f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.visited{
+    background-color: #00b1d3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.visitedobject{
+    background-color: rgb(106, 163, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.visited_far{
+    background-color: #700e01;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.visitedobject_far{
+    background-color: #ff8503;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}  
+.shortest-path{
+    background-color: rgb(255, 254, 106);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.wall{
+    background-color: #0c4e4a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: specialNodes;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+#mainText{
+    margin-top:7px;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    /* background-color: #fad105; */
+}
+#mainText > ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 28px 0 0;
+}
+#mainText div {
+    /* border: 1px solid #51aeb89f; */
+    padding:2px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top: 0.35em;
+    margin: 0 0.42em;
+  }
+.input{
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-bottom:1px solid  #0c4e4a;
+    padding-left: 2px;
+}
+.grid_container{
+    /* margin-top: 5px; */
+    padding: 10px;
+    width: 100%;
+    /* background-color:aliceblue !important; */
+}
+.grid_row_wrapper{
+    /* background-color:aliceblue !important; */
+    box-shadow: 0px 2px 53px 0px rgba(0, 0, 0, 0.07) !important;
+}
+.grid_row{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+
+}
+.navbar{
+    background-color: #0c4e4a;
+    color: white;
+    z-index: 10;
+    font-family: 'Merriweather', serif;
+    padding: 13px 0px;
+}
+h5{
+    font-weight: bold;
+}
+.navbar_wrapper{
+    display:flex;
+}
+.select_wrapper{
+    margin-left:140px
+}
+#clear_btn{
+    color: white;
+    background-color:transparent;
+    outline:none;
+    text-decoration: none;
+    border: none;
+    border-color: transparent;
+    transition: all 1s ease-in;
+}
+#clear_btn:hover{
+    outline:none;
+    color: #fad105;
+    text-decoration: none;
+    border: none;
+    border-color: transparent;
+    /* transition: all 3s ease-in; */
+}
+
+#maze_form{
+    /* background-color:#fad105; */
+    border-radius: 7px;
+    padding-top: 0px;
+}
+#demo-simple-select-label{
+    color: white;
+    /* padding-left: 10px; */
+    padding-top: 3px;
+    /* font-size: 20px; */
+}
+#demo-simple-select{
+    /* padding-left: 10px; */
+    padding-bottom: 10px;
+    background-color:transparent;
+    color: white;
+    border-color: #0c4e4a;
+}
+/* .select{
+    background-color:transparent;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    width: 26vh;
+    font-size: 17px;
+    color: white;
+    font-family: 'Merriweather', serif;
+    transition:all 0.3s ease;
+    border-bottom: 2px solid #fad105;
+}
+.select:hover{
+    outline: none;
+    color: #fad105;
+}
+.option{
+    color: black;
+    font-size: 15px;
+    padding:5px;
+} */

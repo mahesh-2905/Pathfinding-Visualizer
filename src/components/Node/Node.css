@@ -1,0 +1,178 @@
+.node{
+    width: 5vh;
+    height:3.5vh;
+    /* border: 1px solid rgba(0, 140, 255, 0.437); */
+    /* border: 1px solid #3f73e436; */
+    border: 1px solid #51aeb862;
+    background-color: #f6fded00;
+    transition:all 300ms ease;
+}
+.node_wall{
+    transition-timing-function:ease;
+    transition-duration: 500ms;
+    background-color: #0c4e4a;
+    border: 1px solid #0c4e4a;
+    
+}
+.node_start{
+    background-image: url('../../svgIcons/right-arrow.png');
+    background-size: cover;
+    /* border: 1px solid rgba(0, 140, 255, 0.437); */
+    border: 1px solid #3f73e47c;
+}
+.node_finish{
+    
+    background-image: url('https://i.stack.imgur.com/oqzBr.png');
+    background-size: cover;
+    /* border: 1px solid rgba(0, 140, 255, 0.437); */
+    border: 1px solid #3f73e47c;
+}
+.animate_wall,.Togglenode_wall{
+    animation-name: wallAnimation;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  .node_visited {
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  .node_visited_shortestPath {
+    animation-name: visitedAnimationShortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  .node_shortestPath {
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  .node_path{
+    animation-name: path;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  @keyframes path{
+    0% {
+      transform: scale(0.6);
+      background-color: rgb(106, 163, 255);
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color: #00b0d3a4;
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: #00b1d3;
+      border:1px solid #00b1d3;
+    }
+  }
+  
+  @keyframes shortestPath {
+    0% {
+    transform: scale(0.6);
+    background-color: rgb(255, 254, 106);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(255, 254, 106);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(255, 254, 106);
+  }
+    
+  }
+  
+  @keyframes visitedAnimation {
+    0% {
+      transform: scale(0.3);
+      background-color: #700e01;
+      border-radius: 100%;
+    }
+  
+    50% {
+      background-color: #d53600;
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: #ff8503;
+      border-radius: 0%;
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: #ffd22b;
+    }
+  }
+  @keyframes visitedAnimationShortestPath {
+    0% {
+      transform: scale(0.3);
+      background-color: rgba(0, 0, 66, 0.75);
+      border-radius: 100%;
+    }
+  
+    50% {
+      background-color: rgba(17, 104, 217, 0.75);
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: rgba(0, 217, 159, 0.75);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgba(0, 190, 218, 0.75);
+    }
+  }
+  
+  @keyframes wallAnimation {
+    0% {
+      transform: scale(.3);
+      background-color: #0c4e4a;
+      border : 1px solid #0c4e4a;
+    }
+  
+    50% {
+      transform: scale(1.2); 
+      background-color: #0c4e4a;
+      border : 1px solid #0c4e4a;
+    }
+  
+    100% {
+      transform: scale(1.0);
+      background-color: #0c4e4a;
+      border : 1px solid #0c4e4a;
+    }
+  }
